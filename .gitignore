@@ -1,3 +1,5 @@
 .venv
 dist/
 *cpython-38.pyc
+poetry.lock
+pyproject.toml
