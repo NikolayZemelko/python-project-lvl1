@@ -11,16 +11,16 @@ def calc():
     print('What is the result of the expression?')
     is_correct = True
     action_list = '-+*'
-    action_left = len(action_list)
+    action_left = len(action_list) - 1
 
-    while is_correct and action_left > 0:
+    while is_correct and action_left >= 0:
 
         first_num = random.randint(0, 100)
         second_num = random.randint(0, 100)
-        action_left -= 1
         action_ind = random.randint(0, action_left)
         action = action_list[action_ind]
-        action_list = action_list.lstrip(action_list[action_ind])
+        action_list = action_list.replace(action, '')
+        action_left -= 1
         expression = f'{first_num} {action} {second_num}'
         correct_answer = eval(expression)
         print(f'Question: {expression}')
