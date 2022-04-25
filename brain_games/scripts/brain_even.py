@@ -13,12 +13,14 @@ def is_even():
     print('Answer \"yes\" if the number is even, otherwise answer \"no\".')
 
     while correct:
-        
+
         number = random.randint(0, 100)
-        even = True if number % 2 == 0 else False
+        even = number % 2 == 0
+        not_even = number % 2 != 0
         print(f"Question: {number}")
         answer = prompt.string("Your answer: ")
-        correct = True if even == True and answer == 'yes' or even == False and answer == 'no' else False
+        if not_even and answer == 'yes' or even and answer == 'no':
+            correct = False
 
     print("Let\'s try again, Bill!")
 
