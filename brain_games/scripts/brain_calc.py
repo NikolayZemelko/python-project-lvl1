@@ -30,8 +30,8 @@ def calc():
         if is_correct:
             print('Correct!')
         else:
-            print(f'''\'{answer}\' is a wrong answer ;(.
-            Correct answer was \'{correct_answer}\'''')
+            print(f'\'{answer}\' is a wrong answer ;(.')
+            print(f'Correct answer was \'{correct_answer}\'.')
             print(f'Let`s try again, {name}!')
             return
     print(f'Congratulations, {name}!')
