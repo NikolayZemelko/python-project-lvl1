@@ -9,7 +9,7 @@ def is_even():
 
     correct = True
     number = 0
-    greet()
+    name = greet()
     print('Answer \"yes\" if the number is even, otherwise answer \"no\".')
 
     while correct:
@@ -22,7 +22,7 @@ def is_even():
         if not_even and answer == 'yes' or even and answer == 'no':
             correct = False
 
-    print("Let\'s try again, Bill!")
+    print(f"Let\'s try again, {name}!")
 
 
 def main():
