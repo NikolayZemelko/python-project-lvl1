@@ -4,3 +4,4 @@
 ![example workflow](https://github.com/NikolayZemelko/python-project-lvl1/actions/workflows/my-first-workflow.yml/badge.svg?event=push)
 [![asciicast](https://asciinema.org/a/489927.svg)](https://asciinema.org/a/489927)
 [![asciicast](https://asciinema.org/a/490225.svg)](https://asciinema.org/a/490225)
+[![asciicast](https://asciinema.org/a/490272.svg)](https://asciinema.org/a/490272)
