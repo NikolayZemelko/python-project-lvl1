@@ -12,17 +12,29 @@ def is_even():
     name = greet()
     print('Answer \"yes\" if the number is even, otherwise answer \"no\".')
 
-    while correct:
+    counter = 3
+
+    while counter > 0:
 
         number = random.randint(0, 100)
         even = number % 2 == 0
-        not_even = number % 2 != 0
+        fact = "yes" if even else "no"
+
         print(f"Question: {number}")
         answer = prompt.string("Your answer: ")
-        if not_even and answer == 'yes' or even and answer == 'no':
-            correct = False
+        correct = answer == fact
 
-    print(f"Let\'s try again, {name}!")
+        if not correct:
+
+            print(f'\' {answer}\' is wrong answer ;(.')
+            print(f'Correct answer was \'{fact}\'')
+            print(f'Let\'s try again, {name}!')
+            return  # Exit the game
+
+        print("Correct!")
+        counter -= 1
+
+    print(f'Congratulations, {name}!')
 
 
 def main():

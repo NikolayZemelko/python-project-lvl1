@@ -14,10 +14,10 @@ def prime_number():
 
     while counter > 0:
 
-        num = random.randint(0, 1000)
-        print(f'Question: {num}')
+        number = random.randint(1, 100)
+        print(f'Question: {number}')
         answer = prompt.string("Your answer: ")
-        fact = "yes" if isprime(num) else "no"
+        fact = "yes" if isprime(number) else "no"
 
         is_correct = fact == answer
 
@@ -25,7 +25,7 @@ def prime_number():
 
             print(f'\'{answer}\' is wrong answer ;(.')
             print(f'Correct answer was \'{fact}\'')
-            print(f'Let`s try again, {name}!')
+            print(f'Let\'s try again, {name}!')
             return  # Just leave this game
 
         print("Correct!")

@@ -38,7 +38,7 @@ def arith_progression():
         if answer != str(hidden_num):
             print(f'\'{answer}\' is wrong answer ;(.')
             print(f'Correct answer was \'{hidden_num}\'')
-            print(f'Let`s try again, {name}!')
+            print(f'Let\'s try again, {name}!')
             return
 
         questions -= 1

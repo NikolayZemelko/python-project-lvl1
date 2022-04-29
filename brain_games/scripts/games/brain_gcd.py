@@ -34,7 +34,7 @@ def what_is_gcd():
         else:
             print(f'\'{answer}\' is wrong answer ;(.')
             print(f'Correct answer \'{common_max_div}\'')
-            print(f'Let`s try again, {name}')
+            print(f'Let\'s try again, {name}!')
             return  # EXIT is here, when you are wrong :(
 
         counter -= 1

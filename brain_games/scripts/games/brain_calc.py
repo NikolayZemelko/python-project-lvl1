@@ -32,7 +32,7 @@ def calc():
         else:
             print(f'\'{answer}\' is a wrong answer ;(.')
             print(f'Correct answer was \'{correct_answer}\'.')
-            print(f'Let`s try again, {name}!')
+            print(f'Let\'s try again, {name}!')
             return
     print(f'Congratulations, {name}!')
 
