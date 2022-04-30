@@ -1,11 +1,16 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "hexlet school project named \"Brain games\""
 authors = ["NikolayZemelko <zemelko1989@gmail.com>"]
 packages = [
 	{ include = "brain_games" },
 ]
+classifiers = [
+	"Programming Language :: Python",
+	"Topic :: Education :: Testing"
+]
+repository = "https://github.com/NikolayZemelko/python-project-lvl1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
@@ -13,7 +18,7 @@ brain-even = "brain_games.scripts.games.brain_even:main"
 brain-calc = "brain_games.scripts.games.brain_calc:main"
 brain-gcd = "brain_games.scripts.games.brain_gcd:main"
 brain-progression = "brain_games.scripts.games.brain_progression:main"
-brain-prime="brain_games.scripts.games.brain_prime:main"
+brain-prime = "brain_games.scripts.games.brain_prime:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"

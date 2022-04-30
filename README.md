@@ -16,9 +16,9 @@
 
 ### Install
 
-> pip install --user hexlet-code-0.1.0.tar.gz
+> pip install --user git+https://github.com/NikolayZemelko/python-project-lvl1.git
 
-[![asciicast](https://asciinema.org/a/491250.svg)](https://asciinema.org/a/491250)
+[![asciicast](https://asciinema.org/a/491277.svg)](https://asciinema.org/a/491277)
 
 ### Brain-calc game
 #### The user is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down.
