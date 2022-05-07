@@ -1,9 +1,18 @@
 #!/usr/bin/env python
 
-from sympy import isprime
 import prompt
 import random
 from brain_games.scripts.brain_games import greet
+
+
+def is_prime(num):
+
+    counter = 2
+    while counter < num:
+        if num % counter == 0:
+            return False
+        counter += 1
+    return True
 
 
 def prime_number():
@@ -17,7 +26,7 @@ def prime_number():
         number = random.randint(1, 100)
         print(f'Question: {number}')
         answer = prompt.string("Your answer: ")
-        fact = "yes" if isprime(number) else "no"
+        fact = "yes" if is_prime(number) else "no"
 
         is_correct = fact == answer
 
